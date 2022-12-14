@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --main-title-color: #ffffff;
   --background-main-color: #ffffff;
   --sacondary-title-color: #212121;
@@ -19,18 +19,24 @@
   --anim-fast: 300ms ease-out;
   --anim-slow: 800ms ease;
 }
+*/
+
 /**
   |============================
   | Base styles
   |============================
 */
+/*html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   background-color: var(--main-title-color);
   color: var(--sacondary-title-color);
-}
+}*/
+
 /**
   |============================
   | Card set
@@ -52,9 +58,9 @@ body {
   |============================
   | reset
   |============================
-*/
 
-/* Стили для обнуления верхних отступов у элементов  */
+
+/* Стили для обнуления верхних отступов у элементов
 h1,
 h2,
 h3,
@@ -65,33 +71,33 @@ p {
   margin: 0;
 }
 
-/* Класс для обнуления базовых свойств у списков (ul)  */
+/* Класс для обнуления базовых свойств у списков (ul) /
 .list {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-/* Класс для обнуления базовых свойств у ссылок  */
+/* Класс для обнуления базовых свойств у ссылок  /
 .link {
   text-decoration: none;
   color: inherit;
 }
 
-/* Свойства для корректного отображения картинок  */
+/* Свойства для корректного отображения картинок  /
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* Свойства для обнуления курсива у address  */
+/* Свойства для обнуления курсива у address  /
 
 address {
   font-style: normal;
 }
 
-/* components */
+/* components /
 
 .visually-hidden {
   position: absolute;
@@ -106,7 +112,10 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* reset and*/
+  /*reset and */
+
+
+
 
 .list {
   list-style: none;
@@ -118,7 +127,7 @@ address {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.container {
+/*.container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -127,15 +136,13 @@ address {
 
   outline: 2px solid red;
   outline-offset: -2px;
-}
+}*/
 /**
   |============================
   | Шапка сайту
   |============================
 */
-html {
-  scroll-behavior: smooth;
-}
+
 .header__container {
   display: flex;
   align-items: center;

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Web-Studio2</title>
+
     <!--fint famaly-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +23,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--custom style-->
+    <link rel="stylesheet" href="./css/main.min.css">
 
     <!--base style-->
     <link rel="stylesheet" href="./css/styles.css" />
@@ -584,19 +587,16 @@
 
 
           <div class="modal-form-aqreement" role="group">
+            <label class="modal-form-aqreement-desc" for="user_aqreement">
             <input class="modal-form-checkbox visually-hidden" type="checkbox" id="user_aqreement">
-
             <svg class="modal-form-aqreement-icon" width="16" height="15">
               <use class="uncheck" href="./img/icons.svg#uncheck"></use>
               <use class="check" href="./img/icons.svg#check"></use>
             </svg>
-
-            <label class="modal-form-aqreement-desc" for="user_aqreement">Погоджуюся з розсилкою та приймаю
-              <a class="modal-form-aqreement-link" href="">Умови договору</a></label>
+              Погоджуюся з розсилкою та приймаю
+              <a class="modal-form-aqreement-link" href="">Умови договору</a>
+            </label>
           </div>
-
-
-
 
           <button class="modal-form-btn footer-button" type="submit">Відправити</button>
         </form>
