@@ -42,7 +42,7 @@ body {
   | Card set
   |============================
 */
-
+/*
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -116,13 +116,14 @@ address {
 
 
 
-
+/*
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+/*
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -142,7 +143,7 @@ address {
   | Шапка сайту
   |============================
 */
-
+/*
 .header__container {
   display: flex;
   align-items: center;
@@ -187,12 +188,8 @@ address {
 }
 .header--icon {
   fill: currentColor;
- }
- .nav {
-  margin-right: auto;
-  align-items: center;
-  display: flex;
-}
+ }*/
+/*
 .logo {
   font-family: 'Raleway';
   font-size: 26px;
@@ -203,6 +200,11 @@ address {
 }
 .logo__img {
   color: var(--sacondary-title-color);
+}
+.nav {
+  margin-right: auto;
+  align-items: center;
+  display: flex;
 }
 .nav__list {
   display: flex;
@@ -248,7 +250,7 @@ address {
 .nav__link:hover::after,
 .nav__link:focus::after {
   opacity: 1;
-}
+} */
 
 
 /**
@@ -257,7 +259,7 @@ address {
   |============================
 */
 
-
+/*
 .hero {
   max-width: 1600px;
   margin: 0 auto;
@@ -298,13 +300,14 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   border-radius: 4px;
     border: none;
   margin-top: 30px;
-}
+}*/
 
 /**
   |============================
   |        Особливості
   |============================
 */
+/*
 .about {
   padding-bottom: none;
 }
@@ -339,8 +342,10 @@ margin-bottom: 10px;
 /**
   |============================
   | Чим займаємось
+       development
   |============================
 */
+/*
 .section-title {
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -381,6 +386,7 @@ font-weight: 700;
   | Наша команда
   |============================
 */
+/*
 .team {
 background-color:#F5F4FA;
 }
@@ -444,7 +450,7 @@ transition-timing-function: ease-out;
   | Постійні клієнти
   |============================
 */
-
+/*
 .clients__title {
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -488,7 +494,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   |============================
 */
 
-
+/*
 .footer {
   background: #2f303a;
   padding: 60px 0;
@@ -628,7 +634,8 @@ justify-content: center;
 
 
 /*-------Портфоліо--*/
-/*-------Фільтри--*/
+/*-------Projects--*/
+/*
 .list-filters {
   display: flex;
   justify-content: center;
@@ -738,6 +745,7 @@ letter-spacing: 0.03em;
   | modal window
   |============================
 */
+/*
 .backdrop {
   position: fixed;
   top: 0;

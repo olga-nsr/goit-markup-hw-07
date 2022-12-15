@@ -1,12 +1,30 @@
 //untils styles
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/placeholders';
 
 
 //base styles
 @import './base/base';
 @import'./base/reset';
+@import'./base/card-set';
 
 
 //components styles
+@import './components/section';
 @import './components/container';
+@import './components/typography';
+@import './components/header';
+@import './components/logo';
+@import './components/nav';
+@import './components/hero';
+@import './components/btn';
+@import './components/about';
+@import './components/development';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/projects';
+@import './components/modal';
+
+
