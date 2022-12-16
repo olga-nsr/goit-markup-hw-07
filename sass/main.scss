@@ -14,17 +14,25 @@
 @import './components/section';
 @import './components/container';
 @import './components/typography';
-@import './components/header';
+
 @import './components/logo';
 @import './components/nav';
-@import './components/hero';
+
 @import './components/btn';
-@import './components/about';
-@import './components/development';
-@import './components/team';
-@import './components/clients';
-@import './components/footer';
-@import './components/projects';
 @import './components/modal';
+@import './components/footer-btn';
+
+//layout styles
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/development';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/projects';
+
+
+
 
 
