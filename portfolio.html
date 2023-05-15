@@ -6,60 +6,53 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Портфоліо</title>
 <!--fint famaly-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+  rel="stylesheet">
 <!--normalize-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous"
 referrerpolicy="no-referrer"/>
 
- <!--custom style-->
- <link rel="stylesheet" href="./css/main.min.css">
-
-
+<!--base style-->
+   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 <!--Шапка сайту-->
 <header class="header">
-  <div class="header__container container">
+  <div class="header-container container">
 
-    <!--Навігація-->
-    <nav class="nav">
-      <a class="logo link" href="./index.html">Web<span class="logo__img">Studio</span></a>
-      <ul class="nav__list list">
-        <li class="nav__item">
-          <a href="./index.html" class="nav__link link ">Студія</a>
-        </li>
-
-        <li class="nav__item">
-          <a href="./portfolio.html" class="nav__link link nav__link--current">Портфоліо</a>
-        </li>
-
-        <li class="nav__item">
-          <a href="./index.html" class="nav__link link">Контакти</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!--Шапка контакти-->
-    <ul class="header__group list">
-      <li class="header-link">
-        <a class="header__contact link" href="mailto:info@devstudio.com">
-          <svg class="header--icon" width="16" height="10">
-            <use href="./img/icons.svg#icon-mail"></use>
-          </svg>
-          info@devstudio.com</a>
+   <!--Nav-->
+   <nav class="header-nav">
+    <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
+    <ul class="header-list list">
+      <li class="nav-item">
+        <a href="./index.html" class="nav-link link ">Studio</a>
       </li>
-      <li>
-        <a class="header__contact link" href="tel:+380961111111">
-          <svg class="header--icon" width="12" height="16">
-              <use href="./img/icons.svg#icon-smartphone"></use>
-            </svg>
-          +380961111111</a>
+
+      <li class="nav-item">
+        <a href="./portfolio.html" class="nav-link link current">Portfolio</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="./index.html" class="nav-link link">Contacts</a>
       </li>
     </ul>
-  </div>
+  </nav>
+
+   <!--Header-->
+   <ul class="header-list-cont list">
+    <li class="header-link">
+      <a class="auth-link  link" href="mailto:info@devstudio.com">
+        info@devstudio.com</a>
+    </li>
+    <li>
+      <a class="auth-link  link" href="tel:+11 (000) 111-11-11">
+         +11 (000) 111-11-11</a>
+    </li>
+  </ul>
+</div>
+
 </header>
 
 <main>
@@ -68,146 +61,143 @@ referrerpolicy="no-referrer"/>
     <div class="container">
       <ul class="list-filters list ">
         <li class="button-filters">
-          <button type="button" class="button active-btn">Усі </button></li>
+          <button type="button" class="button active-btn">All </button></li>
         <li class="button-filters">
-          <button type="button" class="button">Веб-сайти</button></li>
+          <button type="button" class="button">Web Site</button></li>
         <li class="button-filters">
-          <button type="button" class="button">Додатки</button></li>
+          <button type="button" class="button">App</button></li>
         <li class="button-filters">
-          <button type="button" class="button">Дизайн</button></li>
+          <button type="button" class="button">Design</button></li>
         <li class="button-filters">
-          <button type="button" class="button">Маркетинг</button></li>
+          <button type="button" class="button">Marketing</button></li>
       </ul>
 
 
    <ul class="list card-set">
     <li class="card-set-item portfolio-item">
       <div class="overlay-thumb">
-      <img src="./img/tehnokrak.jpg" alt="Портфоліо">
+      <img src="./img/bank1.jpg" alt="Портфоліо">
       <div class="overlay-port">
         <p class="overlay-title">
-          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+          14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
         </p>
       </div>
     </div>
       <div class="portfolio-wrapper">
-      <h2 class="title-portfolio">Технокряк</h2>
-      <p class="portfolio-description">Веб-сайт</p>
+      <h2 class="title-portfolio">Banking App Interface Concept</h2>
+      <p class="portfolio-description">App</p>
       </div>
 
 
     <li class="card-set-item portfolio-item">
       <div class="overlay-thumb">
-      <img src="./img/New.jpg"    alt="Портфоліо">
+      <img src="./img/pay2.jpg"    alt="Портфоліо">
       <div class="overlay-port">
         <p class="overlay-title">
-          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+          14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
         </p>
       </div>
     </div>
       <div class="portfolio-wrapper">
-         <h2 class="title-portfolio">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-      <p class="portfolio-description">Дизайн </p>
+         <h2 class="title-portfolio">Cashless Payment</span></h2>
+      <p class="portfolio-description">Marketing</p>
     </div>
     </li>
 
     <li class="card-set-item portfolio-item">
        <div class="overlay-thumb">
-      <img src="./img/Seafood.jpg"  alt="Портфоліо">
+      <img src="./img/laptop3.jpg"  alt="Портфоліо">
       <div class="overlay-port">
         <p class="overlay-title">
-          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+          14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
         </p>
       </div>
     </div>
       <div class="portfolio-wrapper">
-      <h2 class="title-portfolio">Ресторан  <span lang="en">Seafood</span></h2>
-      <p class="portfolio-description">Додаток </p>
+      <h2 class="title-portfolio">Meditation App</span></h2>
+      <p class="portfolio-description">App</p>
     </div>
     </li>
     <li class="card-set-item portfolio-item">
        <div class="overlay-thumb">
-      <img src="./img/Prime.jpg"
+      <img src="./img/taxi4.jpg"
       alt="Портфоліо">
       <div class="overlay-port">
         <p class="overlay-title">
-          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-        </p>
+          14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App    </p>
       </div>
     </div>
       <div class="portfolio-wrapper">
-      <h2 class="title-portfolio">Проєкт  <span lang="en">Prime</span></h2>
-      <p class="portfolio-description">Маркетинг</p>
+      <h2 class="title-portfolio">Taxi Service</span></h2>
+      <p class="portfolio-description">Marketing</p>
     </div>
     </li>
     <li class="card-set-item portfolio-item">
        <div class="overlay-thumb">
-      <img src="./img/Boxesjpg.jpg" alt="Портфоліо">
+      <img src="./img/phone4.jpg" alt="Портфоліо">
       <div class="overlay-port">
         <p class="overlay-title">
-          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-        </p>
+          14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App        </p>
       </div>
     </div>
       <div class="portfolio-wrapper">
-      <h2 class="title-portfolio">Проєкт<span lang="en">Boxes</span></h2>
-      <p class="portfolio-description">Додаток</p>
+      <h2 class="title-portfolio">Screen Illustrations</span></h2>
+      <p class="portfolio-description">Design</p>
     </div>
     </li>
     <li class="card-set-item portfolio-item">
        <div class="overlay-thumb">
-      <img src="./img/Borders5.jpg" alt="Портфоліо">
+      <img src="./img/girl6.jpg" alt="Портфоліо">
       <div class="overlay-port">
         <p class="overlay-title">
-          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
         </p>
       </div>
     </div>
       <div class="portfolio-wrapper">
-      <h2 class="title-portfolio"><span lang="en">Inspiration has no Borders</span></h2>
-      <p class="portfolio-description">Веб-сайт</p>
+      <h2 class="title-portfolio"><span lang="en">Online Courses</span></h2>
+      <p class="portfolio-description">Marketing</p>
     </div>
     </li>
     <li class="card-set-item portfolio-item">
        <div class="overlay-thumb">
-      <img src="./img/LimitedEdition.jpg" alt="Портфоліо">
+      <img src="./img/card7.jpg" alt="Портфоліо">
       <div class="overlay-port">
         <p class="overlay-title">
-          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-        </p>
+          14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App        </p>
       </div>
     </div>
       <div class="portfolio-wrapper">
-      <h2 class="title-portfolio">Проєкт<span lang="en"> Limited Edition</span></h2>
-      <p class="portfolio-description">Дизайн</p>
+      <h2 class="title-portfolio">Instagram Stories Concept</span></h2>
+      <p class="portfolio-description">Design</p>
     </div>
     </li>
     <li class="card-set-item portfolio-item">
        <div class="overlay-thumb">
-      <img src="./img/LAB-min.jpg" alt="Портфоліо">
+      <img src="./img/food8.jpg" alt="Портфоліо">
       <div class="overlay-port">
         <p class="overlay-title">
-          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
         </p>
       </div>
     </div>
       <div class="portfolio-wrapper">
-      <h2 class="title-portfolio">Проєкт<span lang="en">LAB</span></h2>
-      <p class="portfolio-description">Маркетинг</p>
+      <h2 class="title-portfolio">Organic Food</h2>
+      <p class="portfolio-description">Web Site</p>
     </div>
     </li>
     <li class="card-set-item portfolio-item">
        <div class="overlay-thumb">
-      <img src="./img/GrowingBusiness.jpg" alt="Портфоліо">
+      <img src="./img/cofee9.jpg" alt="Портфоліо">
       <div class="overlay-port">
         <p class="overlay-title">
-          Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
         </p>
       </div>
     </div>
       <div class="portfolio-wrapper">
-      <h2 class="title-portfolio"><span lang="en">Growing Business</span></h2>
-      <p class="portfolio-description">Додаток</p>
+      <h2 class="title-portfolio"><span lang="en">Fresh Coffee</span></h2>
+      <p class="portfolio-description">Web Site</p>
     </div>
     </li>
    </ul>
@@ -215,94 +205,102 @@ referrerpolicy="no-referrer"/>
   </section>
 </main>
 <!--Підвал-->
- <footer class="footer">
-  <div class="container footer__container">
-    <div class="footer__address">
-      <a class="footer__logo link" href="./index.html">Web<span class="footer__logo--span">Studio</span></a>
-      <address  class="footer__address address">
-        <ul class="address__list list">
-          <li>
-            <a href="https://goo.gl/maps/yUURAm4yrq9FxePc8" target="_blank"
-              class="footer__link link">м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-           <li>
-          <a class="footer__address-cont link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-address">
+    <a class="logo-footer link" href="./index.html"
+      >Web<span class="logo-footer-span">Studio</span></a
+    >
+    <div class="footer-wrapper">
+      <p class="address-discription">
+        Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+      </p>
+      <!-- <ul class="address-list list">
+        <li>
+          <a
+            href="https://goo.gl/maps/yUURAm4yrq9FxePc8"
+            target="_blank"
+            class="footer-link link"
+            >м. Київ, пр-т Лесі Українки, 26</a>
         </li>
         <li>
-          <a class="footer__address-cont link" href="tel:+380961111111">+380961111111</a>
+          <a class="footer-address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        </ul>
-      </address>
+        <li>
+          <a class="footer-address-link link" href="tel:+380961111111">+380961111111</a>
+        </li>
+      </ul> -->
     </div>
-      <div class="footer__socials">
-         <p class="footer__title">ПРИЄДНУЙТЕСЬ</p>
-        <ul class="socials__footer--dark list">
+  </div>
+  <div class="footer-socials">
+    <p class="footer-title">Social media</p>
+    <ul class="socials-footer-dark list">
 
-          <li class="socials__item--dark">
-            <a class="socials__link--dark link"
-            href="https://www.instagram.com/"
-            target="_blank" rel="noopener noreferrer"
-            aria-label="Instagram icon">
-            <svg class="socials__icon--dark" width="20" height="20">
-              <use href="./img/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-          </li>
-          <li class="socials__item--dark">
-            <a class="socials__link--dark link"
-            href="https://www.twitter.com/"
-            target="_blank" rel="noopener noreferrer"
-            aria-label="Twitter icon">
-            <svg class="socials__icon--dark" width="20" height="20">
-              <use href="./img/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-          </li>
-          <li class="socials__item--dark">
-            <a class="socials__link--dark link"
-            href="https://www.facebook.com/"
-            target="_blank" rel="noopener noreferrer"
-            aria-label="Facebook icon">
-            <svg class="socials__icon" width="20" height="20">
-              <use href="./img/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          </li>
-          <li class="socials__item--dark">
-            <a class="socials__link--dark link"
-            href="https://www.linkedin.com/"
-            target="_blank" rel="noopener noreferrer"
-            aria-label="Linkedin icon">
-            <svg class="socials__icon" width="20" height="20">
-              <use href="./img/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-          </li>
-        </ul>
-      </div>
- <div class="footer__form">
-      <p class="footer__title">Підпишіться на розсилку</p>
-      <form class="footer__form-mailing" name="mailing_list" action="">
-        <label for="">
-        <input class="footer__input" type="email" required placeholder="E-mail">
-      </label>
-        <button class="footer__button" type="submit"> Підписатися
-          <svg class="footer__icon" width="24" height="24">
-            <use href="./img/icons.svg#icon-send"></use>
-          </svg>
+      <li class="socials-item-dark">
+        <a class="socials-link-dark link"
+        href="https://www.instagram.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram icon">
+        <svg class="socials-icon-dark" width="16" height="16">
+          <use href="./img/icons.svg#icon-instagram"></use>
+        </svg>
+      </a>
+      </li>
+      <li class="socials-item-dark">
+        <a class="socials-link-dark link"
+        href="https://www.twitter.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Twitter icon">
+        <svg class="socials-icon-dark" width="16" height="16">
+          <use href="./img/icons.svg#icon-twitter"></use>
+        </svg>
+      </a>
+      </li>
+      <li class="socials-item-dark">
+        <a class="socials-link-dark link"
+        href="https://www.facebook.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook icon">
+        <svg class="socials-icon-dark" width="16" height="16">
+          <use href="./img/icons.svg#icon-facebook"></use>
+        </svg>
+      </a>
+      </li>
+      <li class="socials-item">
+        <a class="socials-link-dark link"
+        href="https://www.linkedin.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Linkedin icon">
+        <svg class="socials-icon" width="16" height="16">
+          <use href="./img/icons.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+      </li>
+    </ul>
 
-        </button>
+  </div>
+  <div class="footer-form">
+    <p class="footer-title">Subscribe</p>
+    <form class="footer-form-mailing" name="mailing_list" action="">
+      <label for="">
+      <input class="footer-input" type="email" required placeholder="E-mail">
+    </label>
+      <button class="footer-button" type="submit">Subscribe
+        <svg class="footer-icon" width="24" height="24">
+          <use href="./img/icons.svg#icon-send"></use>
+        </svg>
 
-      </form>
+      </button>
+
+    </form>
 
 
-    </div>
+  </div>
 
-
-    </div>
-
-
-    </footer>
+</footer>
 </body>
 </html>
