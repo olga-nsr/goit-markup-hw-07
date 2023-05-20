@@ -132,15 +132,16 @@ address {
 }
 }
 .container {
+  min-width: 320px;
   max-width: 428px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
+  
 
   outline: 2px solid red;
   outline-offset: -2px;
 }
+
 
 @media screen and (min-width: 768px) {
   .container {
@@ -148,12 +149,12 @@ address {
   }
 }
 
+
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
-    /* width: 1134px; */
+  width: 1158px;
+    }
   }
-}
 /**
   |============================
   | Шапка сайту
@@ -162,20 +163,29 @@ address {
 html {
   scroll-behavior: smooth;
 }
+.header {
+  background-color: var(--background-main-color);
+  border: 1px solid #ECECEC;
+ 
+} 
 .header-container {
   display: flex;
   align-items: center;
 }
 
-.header {
-  background-color: var(--background-main-color);
-  border: 1px solid #ECECEC;
-} 
 .header-nav {
-  margin-right: auto;
+    margin-right: auto;
   align-items: center;
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 22px;
 }
+@media only screen and (min-width: 768px) {
+  .header-nav {
+    padding-bottom: 24px;
+  }
+}
+
 .logo {
   font-family: 'Raleway';
   font-size: 18px;
@@ -183,30 +193,44 @@ html {
   line-height: calc(21 / 18);
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  padding-right: 76px;  
+  /* padding-right: 76px;   */
 }
 
 .logo-header {
   color: var(--sacondary-title-color);
+  
 }
+
+
+
 .header-list {
   display: flex;
   align-items: center;
   gap: 40px;
   margin-right: auto;
 }
+@media only screen and (max-width: 767px) {
+  .header-list {
+    display: none;    
+  }
+}
 .header-list-cont {
   display: flex;
   gap: 40px;
   align-items: center;
 }
+@media only screen and (max-width: 767px) {
+  .header-list-cont {
+    display: none;    
+  }
+}
+
 .nav-link {
   position: relative;
   bottom: 0;
   display: block;
 
-  padding-top: 24px;
-  padding-bottom: 24px;
+ 
   font-weight: 500;
   
   line-height: calc(24 / 16);
@@ -279,6 +303,74 @@ html {
 .header-icon {
   fill: currentColor;
  }
+
+ /**
+ ---Mobile menu-----*/
+ .menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  fill: #000;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
 
 /**
   |============================
