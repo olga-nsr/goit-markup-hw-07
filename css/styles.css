@@ -134,7 +134,7 @@ address {
 .container {
   min-width: 320px;
   max-width: 428px;
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
   
 
@@ -152,7 +152,8 @@ address {
 
 @media screen and (min-width: 1158px) {
   .container {
-  width: 1158px;
+  max-width: 1158px;
+  padding: 0 15px;
     }
   }
 /**
@@ -387,13 +388,20 @@ html {
   margin: 0 auto;
   background-color: #2f303a;
   text-align: center;
-  padding-top : 188px;
-  padding-bottom: 292px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+ 
   background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
 url(../img/people-hero.jpg);
+}
+@media screen and (min-width: 1158px) {
+  .hero {
+  padding-top : 188px;
+  padding-bottom: 292px; 
+  }
 }
 
 .hero-title {
@@ -468,7 +476,7 @@ box-sizing: content-box;
 }
 @media screen and (min-width: 768px) {
  .about-list{
-  flex-wrap: nowrap;
+  
    --items: 2;
   }
 }
@@ -484,6 +492,7 @@ width: 396px;
 @media only screen and (min-width: 768px) {
    .about-tittle {
 width: 356px;
+--items: 2;
 }
 }
 @media only screen and (min-width: 768px) {
@@ -514,11 +523,20 @@ margin-bottom: 8px;
   | Чим займаємось
   |============================
 */
+.container-dev {
+  display: none;
+}
+@media screen and (min-width: 1158px) {
+  .container-dev {
+    display: block;
+  }
+}
 .section-title {
   font-size: 36px;
   line-height: calc(40 / 36);
   text-align: center;
-  display: block;
+  
+   display: block; 
   margin-bottom: 72px;
 }
 .dev-list {
@@ -531,7 +549,7 @@ margin-bottom: 8px;
 margin-right: 24px;
 }
 .dev-item {
-  position:relative;
+  position: relative;
 }
 
 
@@ -544,6 +562,12 @@ margin-right: 24px;
 .team {
 background-color: var(--text-color);
 }
+@media only screen and (min-width: 769px) and (max-width: 1157) {
+  .team-container {
+    max-width: 460px;
+  } 
+  }
+
 .team-title {
    margin-top: 96px;  
   margin-bottom: 72px;
@@ -637,17 +661,39 @@ transition-timing-function: ease-out;
   text-align: center;
   display: block;
   margin-bottom: 72px;
+  margin-top: 64px;
 }
 .clients-list {
   display: flex;
   align-items: center;
-  gap: 24px;
-
+  flex-wrap: wrap;
+  gap: 72px 24px;
+  --items: 2;
+  margin-bottom: 96px;
 }
-.clients-item{
-  width: 168px;
+@media screen and (min-width: 768px) {
+  .clients-list {
+       --items: 3;
+   }
+ }
+ @media screen and (min-width: 1158px) {
+  .clients-list  {
+ --items: 4;
+ margin-bottom: 120px;
+   }
+ }
+
+.clients-item {
+  width: 190px;
   height: 88px;
 }
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: 168px;
+   }
+ }
+ 
+
 .clients-link {
 display: flex;
 justify-content: center;
