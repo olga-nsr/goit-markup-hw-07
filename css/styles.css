@@ -84,11 +84,11 @@ p {
   text-decoration: none;
   color: inherit;
 }
-
+/* Респонсивные контентные изображения  */
 /* Свойства для корректного отображения картинок  */
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -338,12 +338,41 @@ html {
 background-position: center;
 background-size: cover;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-url(../img/people-hero.jpg);
+url(../img/hero/people-office_mob@1x.jpg);
 }
-@media screen and (min-width: 1158px) {
+/*---retina --*/
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-  padding-top : 188px;
-  padding-bottom: 292px; 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+url(../img/hero/people-office_mob@2x.jpg);
+  }
+}
+/*--tab img*/
+@media screen and (min-width: 429px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../img/hero/people-office_tab@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+  url(../img/hero/people-office_tab@2x.jpg);
+    }
+  }
+}
+ /*--des img*/
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../img/hero/people-office\ 1_des@1x.jpg);
+   padding-top: 188px;
+  padding-bottom: 292px;  
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+  url(../img/hero/people-office\ 1_des@2x.jpg);
+    }
   }
 }
 
