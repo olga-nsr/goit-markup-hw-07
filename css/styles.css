@@ -1242,6 +1242,7 @@ background-size: 11px 8px;
   position: fixed;
   top: 0;
   left: 0;
+  width: 428px;
 
   display: flex;
   flex-direction: column;
@@ -1265,20 +1266,55 @@ background-size: 11px 8px;
   position: absolute;
   top: 16px;
   right: 16px;
-
 }
+
+
 .mobile-menu {
   margin-bottom: auto;
+  
 }
+
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+}
+
 
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  
+}
+
+
 .mobile-contacts {
+  width: 353px;
   margin-bottom: 48px;
+
+  
 }
+.mobile-contacts:hover {
+  color: var(--accent-color-text)
 }
+.mobile-contacts-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  display: flex;
+    margin-bottom: 40px;
+  
+}
+.email-contacts-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+}
+
 .mobile-socials {
   justify-content: flex-start;
   gap: 56px;
