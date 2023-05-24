@@ -185,14 +185,25 @@ html {
     margin-right: auto;
   align-items: center;
   display: flex;
+
   padding-top: 24px;
   padding-bottom: 22px;
 }
 @media only screen and (min-width: 768px) {
   .header-nav {
     padding-bottom: 24px;
+    margin-right: 121px
   }
 }
+@media only screen and (min-width: 1158px) {
+  .header-nav {
+    display: flex;
+    padding-bottom: 24px;
+    /* margin: auto; */
+  }
+}
+
+
 
 .logo {
   font-family: 'Raleway';
@@ -231,10 +242,13 @@ html {
     display: none;    
   }
 }
+
+
 .header-list-cont {
   
   padding: 16px;
 }
+
 @media only screen and (max-width: 767px) {
   .header-list-cont {
     display: none;    
@@ -242,15 +256,15 @@ html {
 }
 @media only screen and (min-width: 768px) {
   .header-list-cont {
-  
-    gap: 40px;  
+       gap: 40px;   
      align-items: center;   
   }
 }
 @media only screen and (min-width: 1158px) {
   .header-list-cont {
   
-    display: flex;  
+    display: flex;
+
   }
 }
 
@@ -272,6 +286,14 @@ html {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1158px) {
+  .nav-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  }
+
+
 .nav-link:hover,
 .nav-link:focus,
 .current {
@@ -747,36 +769,68 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .footer {
   background: var(--sacondary-title-color);
-  /* padding: 60px 0; */
-   
+  
     padding-top: 96px;
     padding-bottom: 96px;
+
     margin-left: auto;
     margin-right: auto;
+    
     padding-left: 15px;
     padding-right: 15px;
+   
 }
-.footer-container {
-  
+  @media screen and (min-width: 1158px) {
+ .footer {
+  /* padding: 60px 0; */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  }
+  }
+
+
+.footer-container { 
+
     display: flex;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
-    align-items: baseline;
+    align-items:center;
+     align-items: baseline;
+     text-align: center; 
     justify-content: center;
+    
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1157px)  {
   .footer-container {
-  padding: 96px 0;
+     flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+   
  
 }
 }
+
+@media screen and (min-width: 1158px) {
+  .footer-container {
+    flex-wrap: nowrap;
+  flex-direction: row;
+    align-items: baseline;
+  }
+  }
+
+
+
 .footer-address {
   flex-wrap: wrap;
-  /* min-width: 231px;
-  margin-right: 120px; */
+  }
 
-}
+@media screen and (min-width: 1158px) {
+  .footer-address {
+    min-width: 231px;
+    margin-right: 120px;
+  }
+  }
 .logo-footer {
   font-family: 'Raleway';
   font-style: normal;
@@ -789,45 +843,28 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .logo-footer-span {
   color: var(--text-color);
 }
-.footer-wrapper{
+.footer-wrapper {
  margin-top: 20px;
- width: 268px;
+ width: 268px; 
  
  }
+ @media screen and (min-width: 768px) {
+  .footer-wrapper {
+    width: 264px; 
+  }
+  }
+
+
 .address-discription {
   color: var(--text-color);
  /* width: 264px; */
  font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-/* or 150% */
-
 letter-spacing: 0.02em;
 
 }
-/* .address-list {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-}
-.footer-link {
-  line-height: calc(24 / 14);
-  color: var(--main-title-color);
-  font-style: normal;
-}
-.footer-address-link {
-   line-height: calc(24 / 14);
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-address-link:hover,
-.footer-address-link:focus {
-  color: var(--accent-color);
-} */
 
 .socials-footer-dark {
 display: flex;
@@ -838,16 +875,30 @@ justify-content: center;
 }
 
 .footer-socials {
-  margin-right: 80px;
+  margin-right: 0;
 }
+
+@media screen and (min-width: 1158px) {
+  .footer-socials {
+    margin-right: 80px;
+  }
+  }
+
 .footer-title {
   text-transform: uppercase;
   color: var(--text-color);
       margin-bottom: 16px;
       font-weight: 500;
+      
+
     }
 
 .socials-link-dark {
+  margin-left: auto;
+  margin-right: auto;
+
+
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -869,11 +920,12 @@ justify-content: center;
 
 
 .footer-form {
-  width: 100%;
   
+   
     align-items: center;
     justify-content: center;
 }
+
 .footer-form-mailing {
 
 
@@ -882,10 +934,11 @@ justify-content: center;
 
 }
 @media screen and (min-width: 769px) {
-  
-  
+   
   .footer-form-mailing {
   display: flex; 
+  justify-content: center;
+  align-items: center;
 }
 }
 
@@ -894,12 +947,10 @@ justify-content: center;
   justify-content: center;
 padding: 8px 16px;
 margin-bottom: 16px;
-  padding: 16px;
-width: 100%; 
-    max-width: 398px;
-  /* width: 264px; */
-  height: 40px;
-  /* margin-right: 24px; */
+width: 100%;
+
+  max-width: 398px;
+ 
    
   background-color: var(--sacondary-title-color);
   color: var(--main-title-color);
@@ -908,12 +959,20 @@ width: 100%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   }
+  @media screen and (min-width: 769px) {
+   
+    .footer-input {
+      padding: 16px;
+    display: flex; 
+    width: 264px; 
+    height: 40px;
+   margin-right: 24px; 
+  }
+  }
+
   .footer-button {
     display: inline-flex;
     gap: 10px;
-
-    margin-top: 16px;
-    margin-bottom: 96px;
 
     padding: 9px 3px;
     min-width: 165px;
@@ -1086,15 +1145,26 @@ letter-spacing: 0.02em;
 
   width: 408px;
   min-height: 584px;
+
   padding-top: 72px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 32px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 24px;
   background-color: var(--background-main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 transition: transform 250ms,  opacity 250ms;
 }
+@media screen and (min-width: 765px) {
+  .modal  {
+    padding-left: 24px;
+  padding-right: 24px;
+  }
+  }
+
+
+
 .backdrop.is-hidden .modal {
   opacity: 0;
   transform: translatex(-50%) translateY(-50%);
@@ -1142,10 +1212,8 @@ transition-property: background-color, fill;
   
   font-size: 16px;
   line-height: calc(24 / 16);
-  
+  }
 
-
-}
 .modal-form-label {
   display: block;
   font-size: 12px;
@@ -1307,7 +1375,11 @@ background-size: 11px 8px;
 
  /**
  ---Mobile menu-----*/
-
+.menu-burger-wrap {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
  .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -1316,6 +1388,7 @@ background-size: 11px 8px;
   justify-content: center;
 
   margin: 0;
+  
   margin-left: auto;
   padding: 0;
   background-color: transparent;
