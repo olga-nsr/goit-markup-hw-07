@@ -335,7 +335,7 @@ html {
 
  justify-content: center;
   align-items: center;
-    display: flex; 
+    
     
     padding-bottom: 24px;
   padding-top: 24px;  
@@ -344,6 +344,12 @@ html {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1158px) {
+  .auth-link {
+  
+    display: flex;  
+  }
+  }
 .auth-link:hover,
 .auth-link:focus {
   color: var(--accent-color-text);
@@ -1388,7 +1394,7 @@ background-size: 11px 8px;
   justify-content: center;
 
   margin: 0;
-  
+
   margin-left: auto;
   padding: 0;
   background-color: transparent;
