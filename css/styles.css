@@ -141,8 +141,8 @@ address {
   
   padding: 0 16px;
   margin: 0 auto;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 /* phone*/
 @media screen and (min-width: 480px) {
