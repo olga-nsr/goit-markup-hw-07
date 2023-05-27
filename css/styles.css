@@ -240,8 +240,7 @@ html {
   gap: 40px;
   margin-right: auto;
 
-  padding-bottom: 24px;
-  padding-top: 24px; 
+ 
 }
 @media only screen and (max-width: 767px) {
   .header-list {
@@ -287,6 +286,8 @@ html {
   display: block; 
   font-weight: 500;  
   line-height: calc(24 / 16);
+  padding-top: 24px;
+    padding-bottom: 24px;
   
   color: var(--sacondary-title-color);
   align-items: center;
@@ -473,12 +474,27 @@ max-width: 320px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
     border: none;
-  margin-top: 48px;
+
+  margin-top: 72px;
   cursor: pointer;
   transition-property: background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+@media only screen and (min-width: 767px) {
+ .hero-button {
+   margin-top: 36px;   
+  }
+}
+@media only screen and (min-width: 1158px) {
+ .hero-button {
+   margin-top: 48px;   
+  }
+}
+
+
 .hero-button:hover,
   .hero-button:hover {
     background-color: var(--accent-color-text);
@@ -489,6 +505,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   |        Особливості
   |============================
 */
+.about {
+  padding-bottom: 0;
+}
+
 
 .about-tittle-img{
   
@@ -628,6 +648,7 @@ margin-right: 24px;
 */
 .team {
 background-color: var(--text-color);
+ 
 }
 @media only screen and (min-width: 769px) and (max-width: 1157) {
   .team-container {
@@ -636,18 +657,14 @@ background-color: var(--text-color);
   }
 
 .team-title {
-   margin-top: 96px;  
+   
   margin-bottom: 72px;
 
   font-size: 36px;
   line-height: calc(40 / 36);
   text-align: center;
 }
-@media screen and (min-width: 1158px) {
-  .team-title {
-   margin-top: 120px; 
-}
-}
+
 .team-list {
   
   display: flex;
@@ -685,8 +702,9 @@ background-color: var(--text-color);
 .team-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: calc(24 / 16);
+  line-height: calc(24 / 20);
   text-align: center;
+  margin-bottom: 8px;
   
 }
 .team-description {
@@ -701,6 +719,11 @@ background-color: var(--text-color);
   align-items: center;
    margin-top: 8px;
    gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+     gap: 16px;
+  }
 }
 
 
@@ -730,7 +753,11 @@ transition-timing-function: ease-out;
   | Постійні клієнти
   |============================
 */
+.section-clients {
+
+}
 .container-clients {
+ 
 
 }
 @media screen and (min-width: 768px) {
@@ -758,11 +785,12 @@ transition-timing-function: ease-out;
 .clients-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
     gap: 72px 16px; 
- 
-  --items: 2;  
+   --items: 2;  
   }
+
 @media screen and (min-width: 768px) {
   .clients-list {
        --items: 3;
@@ -777,7 +805,8 @@ transition-timing-function: ease-out;
  }
 
 .clients-item {
-  width: 190px;
+  
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 @media screen and (min-width: 768px) {
@@ -1191,9 +1220,9 @@ letter-spacing: 0.02em;
 }
 .modal {
   position: absolute;
-  top: 50%;
+  top: 20px;
   left: 50%;
-  transform: translatex(-50%) translateY(-50%);
+  transform: translatex(-50%);
   width: 92%;
   height: auto;
   
@@ -1208,8 +1237,10 @@ letter-spacing: 0.02em;
 border-radius: 4px;
 transition: transform 250ms,  opacity 250ms;
 }
+
 @media screen and (min-width: 429px) {
   .modal  {
+    
     
    width: 408px;
   min-height: 584px; 
@@ -1223,6 +1254,14 @@ transition: transform 250ms,  opacity 250ms;
    
   }
   }
+  @media screen and (min-width: 1158px) {
+    .modal  {
+      top: 50%;
+        transform: translatex(-50%) translateY(-50%);
+      
+     
+    }
+    }
 
 
 
